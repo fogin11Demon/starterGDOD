@@ -9,13 +9,13 @@ class Card2 extends StatelessWidget {
     return Center(
       // 1
       child: ListView(
-          //scrollDirection: Axis.horizontal,
+          scrollDirection: Axis.horizontal,
           physics: BouncingScrollPhysics(),
-          padding: EdgeInsets.all(20),
-          //controller: ScrollController(initialScrollOffset: 150),
+          padding: EdgeInsets.all(120),
+          controller: ScrollController(initialScrollOffset: 100),
           children: [
-            Row(children: [
-              Column(
+            Column(children: [
+              Row(
                 children: [
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -74,7 +74,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -133,7 +133,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -192,7 +192,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -251,7 +251,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -310,7 +310,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -369,7 +369,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -428,7 +428,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -487,7 +487,7 @@ class Card2 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 20,
+                    width: 20,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -547,541 +547,7 @@ class Card2 extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                width: 20,
-              ),
-              Column(
-                children: [
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 20,
-                  ),
-                  Container(
-                    constraints: const BoxConstraints.expand(
-                      width: 350,
-                      height: 450,
-                    ),
-                    decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('assets/mag5.png'),
-                        fit: BoxFit.cover,
-                      ),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                    // 2
-                    child: Column(
-                      children: [
-                        const AuthorCard(
-                          authorName: 'Mike Katz',
-                          title: 'Smoothie Connoisseur',
-                          imageProvider: AssetImage('assets/author_katz.jpeg'),
-                        ),
-                        // 1
-                        Expanded(
-                          // 2
-                          child: Stack(
-                            children: [
-                              // 3
-                              Positioned(
-                                bottom: 15,
-                                right: 15,
-                                child: Text(
-                                  'Recipe',
-                                  style:
-                                  FooderlichTheme.lightTextTheme.headline1,
-                                ),
-                              ),
-                              // 4
-                              Positioned(
-                                bottom: 50,
-                                left: 15,
-                                child: RotatedBox(
-                                  quarterTurns: 3,
-                                  child: Text(
-                                    'Smoothies',
-                                    style: FooderlichTheme
-                                        .lightTextTheme.headline1,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              )
+
             ]
             )
           ]
