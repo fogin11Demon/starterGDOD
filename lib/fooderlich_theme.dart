@@ -39,7 +39,7 @@ class FooderlichTheme {
     headline1: GoogleFonts.openSans(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: Colors.white,
+      color: Colors.red,
     ),
     headline2: GoogleFonts.openSans(
       fontSize: 21.0,
@@ -52,15 +52,17 @@ class FooderlichTheme {
       color: Colors.white,
     ),
     headline6: GoogleFonts.openSans(
-      fontSize: 20.0,
-      fontWeight: FontWeight.w600,
-      color: Colors.white,
+      fontSize: 30.0,
+      fontWeight: FontWeight.w700,
+      color: Colors.red,
+      fontStyle: FontStyle.italic,
+
     ),
   );
 
   static ThemeData light() {
     return ThemeData(
-      brightness: Brightness.light,
+      brightness: Brightness.dark,
       checkboxTheme: CheckboxThemeData(
         fillColor: MaterialStateColor.resolveWith(
           (states) {
@@ -85,17 +87,18 @@ class FooderlichTheme {
 
   static ThemeData dark() {
     return ThemeData(
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
       appBarTheme: AppBarTheme(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.grey[900],
+        foregroundColor: Colors.red,
+        backgroundColor: Colors.yellow,
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         foregroundColor: Colors.white,
         backgroundColor: Colors.green,
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: Colors.green,
+        backgroundColor: Colors.yellow,
+        selectedItemColor: Colors.red,
       ),
       textTheme: darkTextTheme,
     );
