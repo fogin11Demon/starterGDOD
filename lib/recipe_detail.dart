@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'recipe.dart';
 
-
 class RecipeDetail extends StatefulWidget {
   final Recipe recipe;
 
@@ -23,7 +22,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
       appBar: AppBar(
         //title: Text(widget.recipe.label),
         title: Text(widget.recipe.label),
-        centerTitle:true,
+        centerTitle: true,
       ),
       // 2
       body: SafeArea(
@@ -36,18 +35,61 @@ class _RecipeDetailState extends State<RecipeDetail> {
               width: double.infinity,
               child: Image(image: AssetImage(widget.recipe.imageUrl)),
             ),
-            // 5
             const SizedBox(
               height: 4,
             ),
-            // 6
+            const SizedBox(
+              height: 4,
+            ),
             Text(
-              'Necessary ingredients:',
+              'Recipe:',
               //widget.recipe.label,
               //style: const TextStyle(fontSize: 30),
               style: Theme.of(context).textTheme.headline6,
             ),
-
+            Column(
+              children: [
+                IconButton(
+                    onPressed: () => showDialog<String>(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                            title: const Text('Recipe'),
+                            content: Text(
+                              widget.recipe.rec,
+                              style: TextStyle(fontSize: 15, color: Colors.red),
+                            ),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () =>
+                                    Navigator.pop(context, 'Cancel'),
+                                child: const Text(
+                                  'Cancel',
+                                  style: TextStyle(color: Colors.red),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () => Navigator.pop(context, 'OK'),
+                                child: const Text(
+                                  'OK',
+                                  style: TextStyle(color: Colors.red),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                    icon: Icon(Icons.book,color: Colors.yellow,size: 30,),),
+              ],
+            ),
+            const SizedBox(
+              height: 4,
+            ),
+            Text(
+              'Necessary ingredients from '
+                  '${_sliderVal * widget.recipe.servings} person:',
+              //widget.recipe.label,
+              //style: const TextStyle(fontSize: 30),
+              style: Theme.of(context).textTheme.headline6,
+            ),
             // 7
             Expanded(
               // 8
@@ -57,11 +99,14 @@ class _RecipeDetailState extends State<RecipeDetail> {
                 itemBuilder: (BuildContext context, int index) {
                   final ingredient = widget.recipe.ingredients[index];
                   // 9
-                  return Text('- ${ingredient.quantity * _sliderVal} '
+                  return Text(
+                      '- ${ingredient.quantity * _sliderVal} '
                       '${ingredient.measure} '
                       '${ingredient.name}',
-                      style: TextStyle(fontStyle:FontStyle.italic,
-                          fontWeight:FontWeight.bold,color: Colors.red,
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red,
                           fontSize: 20));
                 },
               ),
@@ -82,12 +127,15 @@ class _RecipeDetailState extends State<RecipeDetail> {
                 });
               },
               // 14
-              activeColor: Colors.green,
-              inactiveColor: Colors.black,
+              activeColor: Colors.yellow,
+              inactiveColor: Colors.red,
             ),
+
           ],
         ),
       ),
     );
   }
 }
+
+

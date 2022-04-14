@@ -3,8 +3,9 @@ class Recipe {
   String imageUrl;
   int servings;
   List<Ingredient> ingredients;
+  String rec;
 
-  Recipe(this.label, this.imageUrl, this.servings, this.ingredients);
+  Recipe(this.label, this.imageUrl, this.servings, this.ingredients, this.rec);
 
   static List<Recipe> samples = [
     Recipe(
@@ -28,6 +29,26 @@ class Recipe {
           'sauce',
         ),
       ],
+  'First of all, prepare the minced meat: put the meat in a deep bowl, add '
+      'salt and pepper to taste, add thyme and rosemary leaves (pre-crushed) '
+      'and bread crumbs. Mix everything well with your hands, add the egg and '
+      'knead again until smooth. Set aside.Finely chop the onion and garlic. '
+      'In a frying pan (a wide one with high edges is best), fry the onion in '
+      'a small amount of olive oil (1-2 tablespoons) over medium heat for '
+      'about 4-5 minutes, then add the garlic and fry for another couple of '
+      'minutes.Meanwhile, cut the tomatoes in half and rub them on a coarse '
+      'grater, only the pulp. Add tomato paste to the ground tomatoes, add '
+      'salt, mix and pour into a frying pan. Put the finely chopped basil '
+      'leaves in the tomato sauce.While the sauce is boiling, make meatballs: '
+      'with wet hands, make 10 balls with a diameter of about 4 cm. Put them '
+      'in the boiling sauce, reduce the heat so that the sauce does not boil '
+      'too much. Meatballs should be half in the sauce. If required, you can '
+      'add a little water to make the sauce a little more liquid. Cook the '
+      'meatballs under the lid for 20-25 minutes, turning every 5-7 minutes, '
+      'until tender.Cook the pasta until al dente (usually it a minute less '
+      'than it says on the package), drain the water and add it to the pan '
+      'with the sauce. Mix the spaghetti with the sauce, put on a plate and '
+      'sprinkle with parmesan before serving.',
     ),
     Recipe(
       'Tomato Soup',
@@ -40,6 +61,7 @@ class Recipe {
           'Tomato Soup',
         ),
       ],
+      '123',
     ),
     Recipe(
       'Grilled Cheese',
@@ -57,6 +79,7 @@ class Recipe {
           'Bread',
         ),
       ],
+      '123',
     ),
     Recipe(
       'Chocolate Chip Cookies',
@@ -79,6 +102,7 @@ class Recipe {
           'chocolate chips',
         ),
       ],
+      '123',
     ),
     Recipe(
       'Taco Salad',
@@ -106,6 +130,7 @@ class Recipe {
           'chopped tomatoes',
         ),
       ],
+      '123',
     ),
     Recipe(
       'Hawaiian Pizza',
@@ -128,6 +153,7 @@ class Recipe {
           'ham',
         ),
       ],
+      '123',
     ),
   ];
 }
