@@ -30,10 +30,14 @@ class _RecipeDetailState extends State<RecipeDetail> {
         child: Column(
           children: <Widget>[
             // 4
-            SizedBox(
-              height: 300,
-              width: double.infinity,
-              child: Image(image: AssetImage(widget.recipe.imageUrl)),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(30.0),
+              child: Image(image: AssetImage(widget.recipe.imageUrl),
+                height: 350,
+                //width: double.infinity,
+                width: 450,
+                fit: BoxFit.fill,
+              ),
             ),
             const SizedBox(
               height: 4,
