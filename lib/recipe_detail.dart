@@ -56,7 +56,8 @@ class _RecipeDetailState extends State<RecipeDetail> {
                             title: const Text('Recipe'),
                             content: Text(
                               widget.recipe.rec,
-                              style: TextStyle(fontSize: 15, color: Colors.red),
+                              style: TextStyle(fontSize: 15, color: Colors.red,
+                                  fontFamily:'Pacifico'),
                             ),
                             actions: <Widget>[
                               TextButton(

@@ -35,7 +35,9 @@ class _HomeState extends State<Home> {
         title: Text(
           'FooderLich',
           // 2
-          style: Theme.of(context).textTheme.headline6,
+          style:
+
+          Theme.of(context).textTheme.headline6,
         ),
         centerTitle:true,
       ),

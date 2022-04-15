@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       // 2
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title,),
       ),
       // 3
       body: SafeArea(
